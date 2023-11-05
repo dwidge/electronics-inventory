@@ -8,9 +8,8 @@
     "build": "tsc && vite build && cpy dist/index.html . --rename 404.html",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "dev": "cross-env NODE_ENV=development npm run",
-    "prod": "cross-env NODE_ENV=production npm run",
-    "env": "dotenv-flow -p . npm run"
+    "dev": "cross-env NODE_ENV=development dotenv-flow -p . npm run",
+    "prod": "cross-env NODE_ENV=production dotenv-flow -p . npm run"
   },
   "dependencies": {
     "react": "npm:@preact/compat@^17.1.2",
