@@ -1,13 +1,13 @@
 import React from "react";
 import { Stock } from "../types/Stock";
-import { toPrice } from "./toPrice";
+import { toPrice } from "../utils/toPrice";
 
 export const PriceView: React.FC<{
   stock: Stock;
 }> = ({ stock }) => {
   const stockVersions = [stock];
   return (
-    <div className="">
+    <div>
       <p>
         <strong>Last Price:</strong> {toPrice(stockVersions[0].myPrice ?? 0)}
       </p>

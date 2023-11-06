@@ -7,6 +7,19 @@
   flex-direction: column;
 }
 
+input {
+  flex: auto;
+}
+
+label {
+  flex: auto;
+  text-align: right;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .columns,
 .rows {
   display: flex;

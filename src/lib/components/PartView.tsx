@@ -8,6 +8,9 @@ export const PartView: React.FC<{
     <div className="">
       <h2>Part</h2>
       <p>
+        <strong>Type:</strong> {part.type}
+      </p>
+      <p>
         <strong>Item Alpha-Numeric:</strong> {part.codes.us ?? part.codes.eu}
       </p>
       <ul>
