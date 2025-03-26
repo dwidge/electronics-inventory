@@ -5,7 +5,7 @@ import { DeepPartial } from "../utils/DeepPartial";
 import { StockInclude } from "../types/Stock";
 import { StockFilter } from "./StockFilter";
 
-export const StockList: React.FC<{}> = ({}) => {
+export const StockList: React.FC = () => {
   const [sample, setSample] = useState<DeepPartial<StockInclude>>({});
   const stocks = useStocks(sample);
 

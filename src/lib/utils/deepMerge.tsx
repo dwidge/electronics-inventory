@@ -1,4 +1,4 @@
-export const deepMerge = <T extends Record<string, any>>(
+export const deepMerge = <T extends Record<string, unknown>>(
   value: T,
   mask: T
 ): T =>
